@@ -1,7 +1,26 @@
 aid: gowalla
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gowalla.png
 name: Gowalla
-description: 'Gowalla is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Gowalla is a location-based social check-in application that lets people keep up with their
+  friends in the real world by checking in at places, sharing their location, and collecting stamps and
+  passport-style travel memories. Originally launched in 2007 as a pioneering location-based social game,
+  Gowalla was acquired by Facebook in 2011 and wound down in 2012, then relaunched by founder Josh Williams
+  in March 2023 as an iOS app before active development was paused in April 2023. The app remains available
+  on the App Store and continues to operate on a limited basis, recruiting early testers through its Street
+  Team program. Gowalla historically published a Check-In API with OAuth 2 support (2010), but no public
+  developer API, SDK, or documentation is available today. This profile was surfaced as a portfolio company
+  of GV (Google Ventures) and added to the API Evangelist network as a consumer-sector lead.'
 url: https://raw.githubusercontent.com/api-evangelist/gowalla/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,13 +30,33 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Location
+- Social
+- Check-In
+- Mobile
+- Geolocation
+- Maps
 apis: []
+common:
+- type: DomainSecurity
+  url: security/gowalla-domain-security.yml
+- type: Website
+  url: https://gowalla.com
+- type: LandingPage
+  url: https://gowalla.framer.website/
+- type: X
+  url: https://twitter.com/gowalla
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
