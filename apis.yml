@@ -47,7 +47,7 @@ tags:
 - Consumer
 - Location
 - Social
-- Check-in
+- Check-In
 - Mobile
 - Geolocation
 - Maps
@@ -62,6 +62,11 @@ tags_raw:
 - Maps
 apis: []
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/facebook/
+  name: Facebook
+  x-relationship: acquired
+  x-evidence: "Originally launched in 2007 as a pioneering location-based social game, Gowalla was acquired by Facebook in 2011 and wound down in 2012, then relaunched by founder Josh Williams in March 2023 as an iOS app before active development was paus"
 - type: DomainSecurity
   url: security/gowalla-domain-security.yml
 - type: Website
